@@ -20,7 +20,8 @@ The primary goal of the project is to demonstrate **multi-domain knowledge retri
 
 ---
 
-##🧪 Tests
+## 🧪 Tests
+
 🏎️ F1 Expert
 
 Q: Can you describe the rivalry between Alain Prost and Ayrton Senna?
