@@ -13,97 +13,85 @@ The system uses TinyLlama (via Ollama) as a "Router." The Router analyzes the us
 
 If a query falls outside these domains, the system switches to a General Assistant for standard interaction.
 
-## 🧪 Tests / Example Queries
-
-Below are example test queries and expected outputs for each domain agent.
+## 🧪 Tests
 
 ### 🏎️ F1 Expert
 
 **Q:** Can you describe the rivalry between Alain Prost and Ayrton Senna?
 
-**Expected Behavior:**  
-The agent should explain one of Formula 1’s most iconic rivalries, including:
+The rivalry between Alain Prost and Ayrton Senna was one of the most intense and memorable in Formula 1 history. Both drivers were extremely talented and competitive, which led to a series of on-track incidents, controversies, and personal clashes.
 
-- Their years as teammates at McLaren
-- Key incidents (Suzuka 1989 & 1990)
-- Differences in driving style and personality
-- Their eventual reconciliation before Senna’s death
+The tension between them began to build from the late 1980s, with both drivers dominating the sport and seeking to outdo each other. The rivalry was fueled by Prost's perception that McLaren-Honda was giving Senna preferential treatment, which led him to accuse Honda of favoritism towards Senna. This accusation sparked a heated feud between Prost and Senna.
 
-**Example Response:**
-The rivalry between Alain Prost and Ayrton Senna was one of the most intense in Formula 1 history. While teammates at McLaren in 1988–1989, they dominated the sport but developed a fierce personal and professional conflict. Major flashpoints included controversial collisions at Suzuka in 1989 and 1990, which influenced championship outcomes. Prost was known for his calculated approach, while Senna was famous for aggressive speed and risk-taking. Despite tensions, the two eventually reconciled and gained mutual respect.
+The on-track incidents between them were numerous and infamous. One notable example was at the 1989 Imola Grand Prix, where Prost accused Senna of threatening to sideswipe him into the pit wall during a passing maneuver. Another incident occurred at the 1988 Estoril Grand Prix, where Senna tried to prevent Prost from passing him by making a threat.
 
----
+The rivalry also extended beyond the track. The two drivers' personal relationships were strained, with Senna reportedly feeling motivated by his rivalry with Prost. In fact, after Prost retired in 1993, Senna admitted that he had relied heavily on their rivalry to fuel his own motivation.
+
+However, despite the intense rivalry, both drivers showed flashes of respect and admiration for each other's abilities. After Senna's death in 1994, both drivers publicly expressed their regret and sadness over the rivalry they had. The rivalry between Alain Prost and Ayrton Senna remains one of the most fascinating and complex in Formula 1 history, with a legacy that continues to captivate fans to this day.
 
 ### 🏙️ Tricity Guide
 
 **Q:** What are the best historical places to visit in Gdansk?
 
-**Expected Behavior:**  
-The agent should recommend major historical landmarks in Gdańsk.
+Gdańsk has a rich history, and there are many historical places to visit in the city. Here are some of the top recommendations:
 
-**Example Response:**
+St. Dominic's Fair: This historic fair dates back to 1260 and is considered one of the biggest trade and cultural events in Europe.
 
-Recommended historical places in Gdańsk include:
+Main City Hall (Ratusz Gdański): A beautiful example of Brick Gothic architecture from the 15th century, it was built on the site of a 13th-century monastery.
 
-- **St. Mary's Church** – one of the world’s largest brick churches
-- **Main Town Hall** – historic Gothic-Renaissance landmark
-- **Artus Court** – center of merchant life in old Gdańsk
-- **Neptune’s Fountain** – iconic city symbol
-- **The Crane (Żuraw)** – medieval port crane
-- **European Solidarity Centre** – museum of the Solidarity movement
-- **Westerplatte** – symbolic beginning of World War II
+Artus Court: A magnificent Renaissance-style palace that now serves as a museum, featuring an impressive collection of art and historical artifacts.
 
----
+Neptune's Fountain (Fontanna Neptuna): A beautiful fountain located in front of the Town Hall, built by Italian architect Antonio Cibotti in 1733.
+
+The Crane: Also known as the Gdańsk Crane Monument, it's a historic crane that was used to lift heavy weights during the construction of the city's harbor.
+
+Uphagen House (Dom Uphagena): A beautiful example of Brick Gothic architecture from the 15th century, now serving as a museum.
+
+St. Mary's Church (Kościół Mariacki): One of the most iconic landmarks in Gdańsk, this church dates back to the 14th century and features an impressive Gothic interior.
 
 ### 🪐 Space Explorer
 
 **Q:** What are the main characteristics of Jupiter?
 
-**Expected Behavior:**  
-The agent should provide scientific facts about Jupiter.
+Jupiter's main characteristics are:
 
-**Example Response:**
+Size: Jupiter is the largest planet in our Solar System, with a diameter 11 times that of Earth.
 
-Jupiter is the largest planet in the Solar System and is classified as a gas giant.
+Mass: Jupiter has a mass nearly 2.5 times that of all the other planets combined and slightly less than one-thousandth the mass of the Sun.
 
-Key characteristics:
+Orbital characteristics:
 
-- **Diameter:** ~143,000 km
-- **Composition:** Mostly hydrogen and helium
-- **Moons:** Over 90 known moons, including Io, Europa, Ganymede, and Callisto
-- **Storms:** Home to the Great Red Spot
-- **Magnetic Field:** Strongest planetary magnetic field in the Solar System
-- **Orbit:** Around 11.86 Earth years
+Orbital period: approximately 11.86 years (sidereal) or 398.88 days (synodic).
 
----
+Distance from Sun: about 5.20 AU (778.5 km).
+
+Atmospheric composition: Primarily composed of hydrogen (76%) and helium (24%) by mass, with traces of elements like carbon, oxygen, sulfur, neon, and compounds such as ammonia, water vapour, phosphine, and hydrocarbons.
+
+Internal structure: Believed to consist of an outer mantle of fluid metallic hydrogen and a diffuse inner core of denser material.
+
+Shape: Due to its rapid rotation rate, Jupiter has an oblate spheroid shape, with the radius to the equator being about 7% larger than the radius to its poles.
+
+Storms and turbulence: Jupiter's outer atmosphere features latitudinal bands with turbulence and storms, including the famous Great Red Spot storm that has been observed since 1831.
 
 ### 🎬 Film Critic
 
 **Q:** Best 3 films of all time?
 
-**Expected Behavior:**  
-The agent should return highly regarded films based on critical consensus or rankings.
+Based on the available rankings:
 
-**Example Response:**
+Die Hard (1988)
 
-1. **The Godfather (1972)**
-2. **Citizen Kane (1941)**
-3. **Seven Samurai (1954)**
+Aliens (1986)
 
-The ranking may vary depending on the source (IMDb, Letterboxd, Sight & Sound, Rotten Tomatoes).
-
----
+Seven Samurai (1954)
 
 ### 🌐 General Assistant
 
 **Q:** Who is Elon Musk?
 
-**Expected Behavior:**  
-If the question falls outside the domain-specific agents, the system should route to the General Assistant.
+Elon Musk is a South African-born entrepreneur, inventor, and business magnate. He's best known for revolutionizing the electric car industry with Tesla, SpaceX, and other innovative ventures.
 
-**Example Response:**
-
-:contentReference[oaicite:0]{index=0} is a businessman and entrepreneur known for companies such as :contentReference[oaicite:1]{index=1}, :contentReference[oaicite:2]{index=2}, and :contentReference[oaicite:3]{index=3}. He also co-founded PayPal and has been influential in electric vehicles, reusable rockets, and AI-related ventures.
+Musk has been a trailblazer in many ways. He co-founded PayPal, SpaceX, Tesla, Neuralink, and The Boring Company. He is also known for his vision, creativity, and passion for making a positive impact on the world.
 
 ## 🛠️ Tech Stack
 
